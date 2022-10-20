@@ -1,0 +1,1061 @@
+/*
+Style sheet
+Created by Ayesha Bashir
+*/
+/*
+***************************************************************
+BROWSER SPECIFICATION STYLES
+***************************************************************
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+a:hover {
+    transition: all 0.4s ease-in-out;
+}
+body{
+    font-family: poppinsregular;
+}
+/*
+***************************************************************
+Global Style
+***************************************************************
+*/
+ol, ul {
+    list-style: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+p{
+    font-family: robotomedium;
+    font-size: 14px;
+}
+h2 {
+    font-family: robotoblack !important;
+    font-size: 80px !important;
+}
+h3 {
+    font-family: robotoblack !important;
+    font-size: 56px !important;
+    line-height: 100px !important;
+}
+h4 {
+    font-family: robotoblack !important;
+    font-size: 46px !important;
+}
+h5 {
+    font-family: robotoblack !important;
+    font-size: 58px !important;
+    color: white !important;
+    line-height: 70px !important;
+}
+.wrapper {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+.schedule-btn, .learn-btn {
+    background: url(../images/button-bg.png) no-repeat 50% 50%;
+    padding: 15px 18px;
+    border-radius: 15px;
+    margin-right: 20px;
+    border: none;
+    -webkit-box-shadow: 0 0 19px 0px #979696;
+    -moz-box-shadow: 0 0 19px 0px #979696;
+    box-shadow: 0 0 19px 0px #979696;
+    font-family: robotoblack;
+    font-size: 16px;
+}
+.schedule-btn:hover {
+    color: #F15A29;
+}
+.learn-btn {
+    padding: 15px 30px;
+    color: black;
+}
+.learn-btn:hover {
+    text-decoration: none;
+    color: #F15A29;
+}
+.account-btn {
+    background: url(../images/account-btn-border.png) no-repeat 50% 50%;
+    background-size: cover;
+    padding: 16px 18px;
+    border-radius: 15px;
+    color: #F15A29;
+    border: none;
+    font-family: robotoblack;
+    font-size: 16px;
+}
+.account-btn:hover {
+    color: black;
+}
+.price-btn{
+    background: url(../images/price-button-border.png) no-repeat 50% 50%;
+    background-size: cover;
+    padding: 15px 14px;
+    border-radius: 15px;
+    color: #F15A29;
+    border: none;
+    font-family: robotoblack;
+    font-size: 16px;
+}
+.price-btn:hover {
+    color: black;
+}
+.schedule-btn:focus, .account-btn:focus {
+    border: none;
+    outline: none;
+}
+.button-section {
+    margin: 20px 0;
+    display: flex;
+}
+/*
+***************************************************************
+Header Style
+***************************************************************
+*/
+header.secondary-header {
+    position: relative;
+    width: 100%;
+    float: left;
+    background: white;
+}
+nav.navbar {
+    padding: 0.5rem 0;
+}
+.navbar-brand {
+    margin-right: 3rem;
+    padding: 8px !important;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+a.nav-link {
+    font-family: robotoregular;
+}
+span.navbar-text a.nav-link {
+    font-family: robotobold;
+}
+a.dropdown-item {
+    font-family: robotoregular;
+    font-size: 1.67rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+.navbar-text {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    float: right !important;
+}
+.navbar-collapse.collapse {
+    align-items: center !important;
+    /*display: flex !important;*/
+}
+.navbar {
+    margin-bottom: 0 !important;
+}
+/*div#navbarText {*/
+/*    display: flex !important;*/
+/*}*/
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 1.67rem !important;
+}
+header.tertiary-header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+header.primary-header {
+    background: black;
+}
+header.primary-header .navbar-light .navbar-nav .nav-link {
+    color: white;
+    opacity: .75;
+}
+header.primary-header .navbar-light .navbar-nav .active > .nav-link{
+    color: white;
+    opacity: 1;
+}
+header.primary-header .navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+    opacity: 1;
+}
+/*.collapse:not(.show) {*/
+/*    display: none !important;*/
+/*}*/
+.navbar-collapse.collapse.in {
+    display: flex !important;
+}
+/*
+***************************************************************
+Footer Style
+***************************************************************
+*/
+footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    background: #000000;
+    color: white;
+    padding: 80px 0;
+}
+.footer-right img {
+    padding: 0 50px;
+}
+.footer-left {
+    padding: 0 50px 0 0;
+}
+.footer-left .schedule-btn {
+    -webkit-box-shadow: 0 0 11px 0px #fff;
+    -moz-box-shadow: 0 0 11px 0px #fff;
+    box-shadow: 0 0 11px 0px #fff;
+}
+.footer-lg {
+    margin-bottom: 20px;
+}
+.footer-bottom {
+    margin: 50px 0 0 0;
+}
+.footer-left button.account-btn:hover {
+    color: white;
+}
+.footer-sm {
+    display: none;
+}
+/*
+***************************************************************
+Home Page Style
+***************************************************************
+*/
+.black-bg {
+    background: black;
+    padding: 100px 0 0;
+}
+.credit-card-text {
+    width: 450px;
+}
+p.home-banner-text {
+    color: #E7FCFF;
+}
+.client-logo.home-client img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+.finance-section-title {
+    text-align: center;
+}
+.finance-section-title h3 {
+    margin: 0;
+}
+.finance-section-title p {
+    font-size: 28px;
+}
+.finance-bg {
+    background: url(../images/finance-bg.png) no-repeat 50% 50%;
+    background-size: cover;
+    padding: 100px 0;
+}
+.finance-ares {
+    background: url(../images/fainance-bg.png) no-repeat 50% 50%;
+    background-size: contain;
+    margin: 40px;
+    position: relative;
+    height: 700px;
+}
+.finance-item-divs {
+    position: absolute;
+    display: flex;
+    background: white;
+    bottom: 95px;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 20px 0px #979696;
+    -moz-box-shadow: 10px 10px 20px 0px #979696;
+    box-shadow: 10px 10px 20px 0px #979696;
+}
+.finance-item {
+    border-right: 1px solid #75C9D2;
+    padding: 30px;
+}
+.finance-item:last-child {
+    border-right: none;
+}
+.icon img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+.icon {
+    margin-bottom: 15px;
+}
+.title p {
+    font-family: robotoblack;
+    font-size: 18px;
+}
+.title {
+    height: 55px;
+}
+.description p {
+    margin-bottom: 0;
+}
+section.union-section {
+    margin: 200px 0 150px;
+}
+section.union-section .text-section {
+    padding-right: 100px;
+}
+section.union-section .text-section h3 {
+    line-height: 70px !important;
+}
+section.union-section .text-section p {
+    font-size: 28px;
+    margin-right: 180px;
+}
+.launch-detail-section {
+    text-align: center;
+}
+.launch-detail-section .title-section p {
+    font-size: 24px;
+    font-family: 'robotoregular';
+}
+.launch-detail-section .title-section h3 {
+    line-height: 70px !important;
+}
+.launch-count p {
+    font-family: robotoregular;
+    font-size: 56px;
+}
+.launch-count p span {
+    color: #F15A29;
+}
+.launch-count {
+    padding: 0 100px;
+}
+.framework-section .section-title {
+    text-align: center;
+    color: white;
+}
+.framework-section .section-title p {
+    font-size: 24px;
+}
+.framework-section .section-title h3 {
+    line-height: 60px !important;
+}
+.framework-section {
+    margin: 80px 100px;
+}
+.framework-section .section-content {
+    margin: 50px 0;
+}
+.left-section-content, .right-section-content {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+.left-section-content img, .right-section-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+.left-section-content p, .right-section-content p {
+    font-size: 16px;
+    font-family: robotoblack;
+}
+p.card-title-p {
+    margin-bottom: 35px;
+}
+.framework-section .section-content .row {
+    align-items: center;
+}
+.section-title {
+    text-align: center;
+}
+.section-title h3 {
+    line-height: 60px !important;
+}
+.section-title p {
+    font-size: 24px;
+}
+.business-steps {
+    background: url(../images/steps.png) no-repeat 50% 50%;
+    background-size: contain;
+    height: 500px;
+    margin: 50px 0;
+    position: relative;
+}
+.step {
+    background: #F15A29;
+    padding: 20px 40px;
+    border-radius: 20px;
+    color: white;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+}
+.step p {
+    font-family: robotoblack;
+    font-size: 14px;
+}
+.step p:first-child {
+    margin-bottom: 20px;
+}
+.step p:last-child {
+    margin-bottom: 0;
+}
+.step.step-1 {
+    left: 115px;
+    bottom: 100px;
+}
+.step.step-2 {
+    right: 245px;
+    bottom: 25px;
+}
+.step.step-3 {
+    left: 350px;
+    top: 0;
+}
+.epr-img img {
+    width: 20%;
+    float: left;
+    padding: 20px;
+}
+.epr-img {
+    margin: 50px 115px;
+    position: relative;
+    float: left;
+}
+section.epr-system-section {
+    position: relative;
+    margin: 100px 0;
+}
+section.epr-system-section p {
+    padding: 0 80px;
+    font-size: 28px;
+}
+.btn-div {
+    text-align: center;
+}
+.btn-div a {
+    color: black;
+}
+.btn-div a:hover {
+    text-decoration: none;
+}
+.business-benefit-div {
+    -webkit-box-shadow: 10px 10px 20px 0px #979696;
+    -moz-box-shadow: 10px 10px 20px 0px #979696;
+    box-shadow: 10px 10px 20px 0px #979696;
+    border-radius: 20px;
+    padding: 30px;
+}
+.business-benefit-div .icon-div img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.title-div h6 {
+    font-family: robotoblack;
+    font-size: 14px;
+    margin: 15px 0;
+}
+.description-div {
+    height: 160px;
+}
+.button-div {
+    margin: 20px 0;
+}
+.learn-more {
+    padding: 16px 32px;
+}
+section.business-benefits-section .section-content {
+    margin: 50px 0;
+}
+/*
+***************************************************************
+Product_Visa-Company_Card Page Style
+***************************************************************
+*/
+h5.product-2-banner-text {
+    font-size: 82px !important;
+    line-height: 80px !important;
+}
+img.img-fluid.platinum-card {
+    margin-top: -135px;
+    margin-left: -100px;
+}
+.platinum-div {
+    margin-bottom: -65px !important;
+}
+.product-2-feature-section .row {
+    align-items: center !important;
+}
+.product-2-feature-section .left-content, .product-2-feature-section .right-content {
+    padding: 50px 80px;
+}
+.product-2-feature-section .img-side {
+    width: 500px;
+    padding: 40px 115px;
+}
+.team-spend-section {
+    padding: 0 60px;
+}
+.team-spend-section .section-title p {
+    padding: 0 170px;
+}
+.team-speed-div {
+    background: #F5F5F5;
+    padding: 30px;
+    margin: 50px 30px;
+    height: 210px;
+    border-radius: 20px;
+}
+.team-speed-div .title {
+    height: auto;
+}
+.team-speed-div .title h6 {
+    font-size: 14px;
+    font-family: robotoblack;
+}
+.global-spend-content-div {
+    margin: 100px 0 100px 100px;
+}
+.global-spend-div {
+    padding: 20px 0;
+}
+.global-spend-div h4 {
+    font-size: 38px !important;
+}
+.team-spend-section .row {
+    align-items: center;
+}
+.left-content img {
+    width: 300px;
+}
+/*
+***************************************************************
+Product_Expense_Managment Page Style
+***************************************************************
+*/
+.product-banner {
+    padding-right: 115px;
+}
+.why-LeoSpot-banner-left p {
+    padding: 20px 300px 20px 0;
+}
+.product-banner p {
+    padding: 20px 175px 20px 0;
+}
+.why-LeoSpot-banner-right {
+    position: relative;
+}
+img.img-fluid.img-1 {
+    position: absolute;
+    top: -135px;
+    right: 50px;
+    width: 300px;
+}
+img.img-fluid.img-2 {
+    position: absolute;
+    top: -35px;
+    left: -210px;
+}
+.banner-illustration {
+    margin: 100px 0;
+}
+.feature-section {
+    margin: 100px;
+}
+.feature-div {
+    text-align: center;
+    padding: 20px;
+}
+.feature-div .icon img {
+    width: 100%;
+}
+.feature-div .title {
+    height: auto;
+}
+.feature-div .title h6 {
+    font-family: 'robotoblack';
+    font-size: 14px;
+}
+.feature-div .description p {
+    font-size: 12px;
+}
+.pink-img-bg {
+    background: url(../images/pink-img-bg.png) no-repeat 50% 50%;
+    background-size: cover;
+    padding: 100px 0;
+}
+.pink-img-bg .section-title {
+    margin-bottom: 30px;
+}
+.pink-img-bg .section-title p {
+    padding: 0 150px;
+}
+.left-content {
+    padding: 80px;
+}
+.img-side{
+    padding: 30px 80px;
+}
+.pink-img-bg .row {
+    align-items: center;
+}
+.right-content img {
+    width: 300px;
+}
+.pink-img-bg .button-section {
+    text-align: right;
+    width: 100%;
+    margin-right: 215px;
+    margin-top: -70px;
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+}
+.report-section {
+    padding: 0 150px;
+}
+
+/*
+***************************************************************
+Why_LeoSpot Page Style
+***************************************************************
+*/
+.page-content{
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.pink-bg {
+    background: #FDE2D9;
+    padding: 100px 0;
+}
+section.count-section {
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 100px 0 0;
+    text-align: center;
+}
+.count-div h3 {
+    font-family: robotoblack !important;
+    font-size: 96px !important;
+    margin-bottom: 20px;
+}
+.count-div p {
+    padding: 0px 70px;
+    font-size: 16px;
+}
+section.why-us-section {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.why-us {
+    background: white;
+    width: 100%;
+    margin: 100px 10% 0;
+    padding: 50px;
+    border-radius: 25px;
+}
+.why-us-img {
+    width: 350px;
+    float: right;
+    margin-top: -100px;
+}
+.why-us h2 span {
+    color: #F15A29;
+}
+.why-us h2 {
+    margin-right: 120px;
+    margin-bottom: 30px;
+}
+.why-us-row.mid .why-us h2 {
+    float: right;
+    text-align: right;
+    margin-right: 0;
+    margin-left: 200px;
+}
+.why-us-row.mid .learn-btn {
+    float: right;
+}
+.why-us-row.mid .why-us-img {
+    float: left;
+}
+/*
+***************************************************************
+FAQ Page Style
+***************************************************************
+*/
+.faq-banner-caption {
+    text-align: center;
+}
+.white-bg {
+    background: white;
+    margin: 100px 0;
+}
+.faq-banner-caption p {
+    font-size: 16px;
+}
+.faq-banner-caption img {
+    width: 400px;
+}
+section.faq-section {
+    margin: 0 200px;
+}
+.accordion-item {
+    border: 1px solid #F15A29;
+    background: #FFF6F3;
+    padding: 30px;
+    margin: 50px;
+    position: relative;
+}
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(../images/close.png);
+    background-size: 2.25rem;
+    background-repeat: no-repeat;
+    transition: transform 0.2s ease-in-out 0s;
+    position: absolute;
+    right: 40px;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/open.png);
+    transform: rotate(-180deg);
+}
+button.accordion-button {
+    background: none;
+    border: none;
+    font-family: robotoblack;
+    font-size: 30px;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+button.accordion-button:focus{
+    border: none;
+    outline: none;
+}
+h2.accordion-header {
+    font-size: 30px !important;
+    margin-top: 0 !important;
+}
+header.primary-header .navbar-light .navbar-toggler {
+    background: white;
+}
+/*
+***************************************************************
+Help Center Page Style
+***************************************************************
+*/
+.orange-bg {
+    background: #F15A29;
+}
+.grey-bg {
+    background: #F5F5F5;
+}
+.help-banner-content h2 {
+    color: white;
+}
+.help-banner-content {
+    text-align: center;
+    padding: 200px 0;
+}
+header.tertiary-header a.nav-link {
+    color: white !important;
+}
+header.tertiary-header a.nav-link:hover{
+    color: white !important;
+}
+.search-bar {
+    padding: 30px 150px;
+    position: relative;
+}
+.search-bar input {
+    width: 100%;
+}
+.search-bar button {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 150px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    font-family: robotobold;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.search-bar button img {
+    width: 50px;
+    margin: 10px;
+}
+.search-bar button:focus, .search-bar input:focus {
+    outline: none;
+    border: none;
+}
+section.help-section {
+    padding: 0 170px;
+}
+.help-question-div {
+    margin: 100px 0;
+    background: white;
+    padding: 50px;
+}
+.help-question h6 {
+    font-family: robotomedium;
+    font-size: 28px;
+}
+.help-answer p, .writer-articles p{
+    font-family: robotoregular;
+    font-size: 28px;
+}
+.writer-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.writer-articles p a{
+    color: #333;
+}
+.help-icon-div img {
+    width: 115px;
+}
+.help-question-div .row {
+    align-items: center;
+}
+/*
+***************************************************************
+Blog Page Style
+***************************************************************
+*/
+.light-yellow-bg {
+    background: #FEFFE5;
+    padding: 100px 0;
+}
+.blog-page .stories-banner-right {
+    width: 650px;
+}
+.blog-page .stories-banner-left p {
+    padding: 20px 160px 20px 0;
+}
+.auther-div p {
+    font-family: "robotoregular";
+    font-size: 14px;
+    color: #101010;
+}
+.auther-div p span {
+    font-family: robotomedium;
+    font-size: 14px;
+    margin: 0 15px;
+}
+.banner-tags {
+    background: #FFF6F3;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+.banner-tags span {
+    margin: 0 10px;
+    font-family: robotoregular;
+    font-size: 14px;
+}
+section.banner-section.blog-page-banner {
+    margin-bottom: 0;
+}
+/*
+***************************************************************
+Customer_stories Page Style
+***************************************************************
+*/
+.customer-stories-page .banner-caption {
+    text-align: center;
+    padding: 10px 0 60px;
+}
+.stories-banner-left {
+    padding: 50px 70px 20px 0;
+}
+.stories-banner-right {
+    width: 500px;
+    float: right;
+}
+section.banner-section {
+    margin-bottom: 100px;
+}
+.stories-count-div {
+    text-align: center;
+    padding: 0 80px;
+}
+section.stories-count-section {
+    background: #F15A29;
+    padding: 80px 0;
+    color: white;
+}
+.count-heading {
+    height: 80px;
+}
+.stories-count-div strong {
+    font-family: robotoblack;
+    font-size: 18px;
+}
+.stories-count-div p {
+    padding: 0;
+}
+.page-content.pink-bg.customer-stories-page {
+    padding-bottom: 0;
+}
+.light-pink-bg {
+    background: #FFF6F3;
+    padding: 20px 0 100px;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+section.customer-stories-section {
+    text-align: center;
+}
+.customer-stories-tab {
+    margin-top: 80px;
+}
+.story-tags ul {
+    display: inline-flex;
+}
+.story-tags ul li {
+    background: white;
+    padding: 10px 40px;
+    margin: 10px;
+    border-radius: 50px;
+    font-family: robotomedium;
+    font-size: 28px;
+}
+.story-tags {
+    margin-bottom: 30px;
+}
+.story-img {
+    margin-bottom: 20px;
+}
+.story-title p {
+    font-size: 16px;
+}
+.story-btn {
+    margin-top: 40px;
+}
+a.account-btn:hover {
+    text-decoration: none;
+}
+.story-title {
+    height: 50px;
+}
+.story-div {
+    height: 580px;
+}
+section.clients-section {
+    text-align: center;
+    padding: 20px 0 100px;
+}
+.item {
+    padding: 50px;
+}
+section.clients-section p {
+    font-size: 20px;
+}
+.clients-div {
+    margin-top: 30px;
+}
+/*
+***************************************************************
+Pricing Page Style
+***************************************************************
+*/
+.pricing-page .banner-section {
+    text-align: center;
+}
+.pricing-page .banner-section h3 {
+    line-height: 65px !important;
+    margin: 80px 0 30px;
+    padding: 0px 150px;
+}
+.price-title h4 {
+    font-size: 42px !important;
+}
+.price-div {
+    background: #FEFFE5;
+    padding: 30px 30px 60px;
+    border-radius: 15px;
+}
+.price-title p {
+    margin: 15px 80px 15px 0;
+}
+.subscription-price p {
+    margin: 10px 0 15px;
+}
+.subscription-detail {
+    padding: 30px 0;
+}
+.subscription-detail ul {
+    list-style: auto;
+    margin-left: 20px;
+    padding-right: 110px;
+}
+.subscription-detail ul li {
+    font-family: robotomedium;
+    font-size: 14px;
+    line-height: 24px;
+}
+section.pricing-section {
+    margin-bottom: 100px;
+}
+.feature-btn-div a {
+    color: black;
+}
+.feature-btn-div a:hover {
+    text-decoration: none;
+}
+.addition-features h4 {
+    margin-bottom: 20px;
+}
+.addition-features ul {
+    list-style: disc;
+    margin-left: 35px;
+}
+.addition-features ul li {
+    font-family: robotomedium;
+    font-size: 14px;
+    line-height: 24px;
+}
+.filter-btn {
+    background: white;
+    padding: 10px 40px;
+    margin: 10px;
+    border-radius: 50px;
+    font-family: robotomedium;
+    font-size: 28px;
+    border: 1px solid white;
+}
