@@ -1059,3 +1059,14 @@ section.pricing-section {
     font-size: 28px;
     border: 1px solid white;
 }
+.licence_div {
+    width: 100%;
+    text-align: center;
+    margin: 50px auto -50px;
+}
+.licence_div h6 {
+    font-size: 14px;
+}
+.licence_div p {
+    font-size: 12px;
+}
